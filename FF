@@ -1,0 +1,83 @@
+<div class="roulette-wheel">
+  <div class="roulette-item">Restaurant 1</div>
+  <div class="roulette-item">Restaurant 2</div>
+  <div class="roulette-item">Restaurant 3</div>
+  <div class="roulette-item">Restaurant 4</div>
+  <div class="roulette-item">Restaurant 5</div>
+  <div class="roulette-item">Restaurant 6</div>
+  <div class="roulette-item">Restaurant 7</div>
+  <div class="roulette-item">Restaurant 8</div>
+</div>
+
+<button class="spin-button">Spin</button>
+<div class="result"></div>
+
+.roulette-wheel {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: #eee;
+  position: relative;
+  overflow: hidden;
+}
+
+.roulette-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: -25px;
+  margin-left: -100px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  font-weight: bold;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform 2s ease-in-out;
+}
+
+.roulette-item:nth-child(1) {
+  transform: translateX(-50%) translateY(-50%) rotate(45deg) translateX(250px) rotate(-45deg);
+}
+
+.roulette-item:nth-child(2) {
+  transform: translateX(-50%) translateY(-50%) rotate(90deg) translateX(250px) rotate(-90deg);
+}
+
+.roulette-item:nth-child(3) {
+  transform: translateX(-50%) translateY(-50%) rotate(135deg) translateX(250px) rotate(-135deg);
+}
+
+.roulette-item:nth-child(4) {
+  transform: translateX(-50%) translateY(-50%) rotate(180deg) translateX(250px) rotate(-180deg);
+}
+
+.roulette-item:nth-child(5) {
+  transform: translateX(-50%) translateY(-50%) rotate(225deg) translateX(250px) rotate(-225deg);
+}
+
+.roulette-item:nth-child(6) {
+  transform: translateX(-50%) translateY(-50%) rotate(270deg) translateX(250px) rotate(-270deg);
+}
+
+.roulette-item:nth-child(7) {
+  transform: translateX(-50%) translateY(-50%) rotate(315deg) translateX(250px) rotate(-315deg);
+}
+
+.roulette-item:nth-child(8) {
+  transform: translateX(-50%) translateY(-50%) rotate(0deg) translateX(250px) rotate(0deg);
+}
+
+.spin-button {
+  display: block;
+  margin: 20px auto;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+ 
